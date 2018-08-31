@@ -4,7 +4,7 @@ var elasticSearch = require('./elastic')
 const uuidv4 = require('uuid/v4')
 
 function refresh() {
-    elasticSearch.createIndex('amazon').then((response) => {
+    return elasticSearch.createIndex('amazon').then((response) => {
         bulk = []
         products.forEach(item => {
             if(item.title && item.price && item.images && item.images.length) {

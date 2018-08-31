@@ -7,7 +7,9 @@ app.get('/', function(req, resp) {
 })
 
 app.get('/refresh', function(req, resp) {
-    elasticSearch.refresh()
+    elasticSearch.refresh().then(function(response) {
+        resp.send("Completed")
+    })
 })
 
 var server = app.listen(8080, function() {
