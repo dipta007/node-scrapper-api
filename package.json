@@ -1,0 +1,17 @@
+{
+  "name": "scrapper-node-api",
+  "version": "1.0.0",
+  "description": "A nodeJS app to provide API to refresh the data everyday",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "dipta007",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^15.1.1",
+    "express": "^4.16.3",
+    "uuid": "^3.3.2"
+  }
+}
